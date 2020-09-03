@@ -9,4 +9,4 @@ This repository collect some interview questions
 ## FAQ
 有任何疑问请提交 **issue**
 ## Other
-**感谢阅读，希望对你有帮助！**
+**感谢阅读，希望对您有帮助！**

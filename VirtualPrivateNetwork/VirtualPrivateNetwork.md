@@ -3,6 +3,7 @@
 ## ShadowsocksR
 - 来源：艺术极客
 - 链接：[Windows“小飞机”（ShadowsocksR）全使用教程](https://www.artgeek.cn/?p=618)
+<a href="https://www.artgeek.cn/?p=618" target="_blank">Windows“小飞机”（ShadowsocksR）全使用教程</a>
 ------
 
 ## 蓝灯

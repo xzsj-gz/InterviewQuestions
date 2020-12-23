@@ -10,7 +10,7 @@ This repository collect some interview questions
 有任何疑问请提交 **issue**  
 
 
-## Contact Us  
+## Contact  
 [Blog](https://www.cnblogs.com/xzsj)  
   
 [WeChat](https://images.cnblogs.com/cnblogs_com/xzsj/1884735/o_201210072516weChat-QRCode.jpg)  

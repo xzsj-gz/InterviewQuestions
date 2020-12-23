@@ -17,7 +17,7 @@ This repository collect some interview questions
   
 [Java 新手(3907814)](https://qm.qq.com/cgi-bin/qm/qr?k=Q_913y_AgJ0DEMyu_irgG3ffMlSds1S2&authKey=AEsTfOL%2Frw%2F6Pv8x2p1ggufGH0rQnYallIcRNcIz%2FOlDgz68jpfR9S8YZiVvpsFI&noverify=0&group_code=3907814) 
   
-[Web 前端技术(600762728)](https://jq.qq.com/?_wv=1027&k=eH3KoGCO)()
+[Web 前端技术(600762728)](https://jq.qq.com/?_wv=1027&k=eH3KoGCO)
 
 
 ## Other  

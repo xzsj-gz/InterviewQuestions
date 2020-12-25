@@ -1,17 +1,17 @@
-# 合理上网方式
+## 合理上网方式
 -------
-## ShadowsocksR
+### ShadowsocksR
 - 来源：艺术极客
 - 链接：[Windows“小飞机”（ShadowsocksR）全使用教程](https://www.artgeek.cn/?p=618)
 ------
 
-## 蓝灯
+### 蓝灯
 - 官网
 - [蓝灯加速软件官网](https://www.getlandeng600.org/index.php)
 
 ------
 
-## 12vpn
+### 12vpn
 - 12vpn 官网
 - [High Speed Access Service](https://12vpx.com/)
 

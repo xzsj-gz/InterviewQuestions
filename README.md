@@ -5,6 +5,11 @@ This repository collect some interview questions
 ## Content  
 本库中收藏了**前端面试题**和 **JAVA 面试题**  
 
+前端面试题在 **WebInterview** 文件夹  
+JAVA 面试题在 **JavaInterview** 文件夹  
+
+PS：VirtualPrivateNetwork 文件夹为科学上网方式推荐 
+
 
 ## FAQ  
 有任何疑问请提交 **issue**  

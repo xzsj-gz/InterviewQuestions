@@ -1,20 +1,23 @@
-## 合理上网方式
+## 科学上网方式
 -------
-### ShadowsocksR
-- 来源：艺术极客
-- 链接：[Windows“小飞机”（ShadowsocksR）全使用教程](https://www.artgeek.cn/?p=618)
+
+### 12vpn
+- [主站Primary website](https://12vpn.com/)
+- [镜像站Mirror website](https://12vpn.com/)
+- 中国网站China website:[blockthis.xyz](https://blockthis.xyz/)、[sk.blockthis.xyz](https://sk.blockthis.xyz/)、[jp.blockthis.xyz](https://jp.blockthis.xyz/)
+- 如果如上地址都无效，请发送邮件到 *support@twelvemail.com* 询问地址。
+
 ------
 
 ### 蓝灯
-- 官网
-- [蓝灯加速软件官网](https://www.getlandeng600.org/index.php)
+- [蓝灯最新下载](https://github.com/HomKuo/landeng)
+- [蓝灯中国](http://www.landeng.cn/?/account/login/url-Lz8vcGVvcGxlL2dqag==)
 
 ------
 
-### 12vpn
-- 12vpn 官网
-- [High Speed Access Service](https://12vpx.com/)
-
+### ShadowsocksR
+- 来源：艺术极客
+- 链接：[Windows“小飞机”（ShadowsocksR）全使用教程](https://www.artgeek.cn/?p=618)
 ------
 
 ## 声明

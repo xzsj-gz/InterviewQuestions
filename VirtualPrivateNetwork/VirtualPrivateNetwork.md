@@ -1,6 +1,4 @@
 ## 科学上网方式
-@[toc](目录)
--------
 
 ### 12vpn
 - [主站Primary website](https://12vpn.com/)

@@ -7,8 +7,10 @@ This repository collect some interview questions
 
 前端面试题在 **WebInterview** 文件夹  
 JAVA 面试题在 **JavaInterview** 文件夹  
+前端开源项目推荐 **FrontendEvent** 文件夹  
+前端资料 **FrontResources** 文件夹  
 
-PS：VirtualPrivateNetwork 文件夹为科学上网方式推荐 
+PS：VirtualPrivateNetwork 文件夹为科学上网方式推荐  
 
 
 ## FAQ  
@@ -29,3 +31,4 @@ PS:*请您备注来源*
 ## Other  
 **感谢阅读，希望对您有帮助！**  
 
+**资料中有的文章收集自其他作者，但是由于收集的好文章太多，有的忘了备注出处，如果有侵权请联系删除。**

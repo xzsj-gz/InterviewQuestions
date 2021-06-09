@@ -13,7 +13,7 @@ Promise中有几个状态：
 *   pending: 初始状态, 非 fulfilled 或 rejected；
 *   fulfilled: 成功的操作，为表述方便，fulfilled 使用 resolved 代替；
 *   rejected: 失败的操作。
-![](https://img-blog.csdnimg.cn/img_convert/7f8c425a0c870ee6eca86e023dfe98e7.png)
+![ ](https://upload-images.jianshu.io/upload_images/24295319-419155129cf282e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 **pending可以转化为fulfilled或rejected并且只能转化一次，也就是说如果pending转化到fulfilled状态，那么就不能再转化到rejected。并且fulfilled和rejected状态只能由pending转化而来，两者之间不能互相转换。**
 
@@ -53,6 +53,7 @@ result.then(
     console.log(2, img.height)
   })
 </script>
+
 ```
 
 ## 二、Promise多个串联操作
@@ -77,6 +78,7 @@ result1.then(function (img1) {
 }).catch(function (ex) {
   console.log(ex)
 })     
+
 ```
 
 这里需注意的是：**then 方法可以被同一个 promise 调用多次，then 方法必须返回一个 promise 对象**。上例中result1.then如果没有明文返回Promise实例，就默认为本身Promise实例即result1，result1.then返回了result2实例，后面再执行.then实际上执行的是result2.then
@@ -98,6 +100,7 @@ var p2 = new Promise(function (resolve, reject) {
 Promise.all([p1, p2]).then(function (results) {
     console.log(results); // 获得一个Array: ['P1', 'P2']
 });
+
 ```
 
 有些时候，多个异步任务是为了容错。比如，同时向两个URL读取用户的个人信息，只需要获得先返回的结果即可。这种情况下，用Promise.race()实现：
@@ -112,6 +115,7 @@ var p2 = new Promise(function (resolve, reject) {
 Promise.race([p1, p2]).then(function (result) {
     console.log(result); // 'P1'
 });
+
 ```
 
 由于p1执行较快，Promise的then()将获得结果'P1'。p2仍在继续执行，但执行结果将被丢弃。
@@ -134,6 +138,7 @@ Promise.all([result1, result2]).then(function(datas) {
 Promise.race([result1, result2]).then(function(data) {
   console.log('race', data) //<img src="https://img1.mukewang.com/545862fe00017c2602200220-100-100.jpg">
 })  
+
 ```
 
 如果我们组合使用Promise，就可以把很多异步任务以并行和串行的方式组合起来执行
@@ -178,6 +183,7 @@ const load = async function() {
   console.log(result2)
 }
 load()
+
 ```
 
 **当函数执行的时候，一旦遇到 await 就会先返回，等到触发的异步操作完成，再接着执行函数体内后面的语句。**
@@ -253,6 +259,7 @@ const makeRequest = () => {
       }
     })
 }
+
 ```
 
 代码嵌套（6层）可读性较差，它们传达的意思只是需要将最终结果传递到最外层的Promise。使用async/await编写可以大大地提高可读性:
@@ -270,3 +277,5 @@ const makeRequest = async () => {
   }
 }
 ```
+
+ 

@@ -246,8 +246,3 @@ changeColor();
    ![](https://img-blog.csdnimg.cn/img_convert/23da5997049a522f9cb634ecd52c29a6.png)
 
 
-
-> 作者：浪里行舟   
-> 链接：[深入理解JavaScript执行上下文和执行栈](https://github.com/ljianshu/Blog/issues/60)   
-> 来源：github   
-> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。

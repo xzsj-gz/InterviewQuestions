@@ -1,0 +1,113 @@
+一、写一个函数实现浅拷贝，将 obj1 拷贝到 obj2
+var obj1 = {
+  age: 26,
+  sex: "男",
+  car: ["宾利", "阿斯顿马丁", "布加迪"]
+};
+var obj2 = {};
+
+
+答案：
+function extend(a, b) {
+  for (var key in a) {
+    b[key] = a[key];
+  }
+}
+extend(obj1, obj2);
+
+
+
+二、写一个函数实现深拷贝，将 obj1 拷贝到 obj2
+var obj1 = {
+  age: 36,
+  sex: "女",
+  car: ["法拉利", "特斯拉"],
+  dog: {
+    name: "carry",
+    age: 5,
+    color: "棕色"
+  }
+};
+var obj2 = {};
+
+
+答案：
+function extend(a, b) {
+    for (var key in a) {
+        //获取a对象中的每个属性值
+        var item = a[key];
+        //判断此时的a属性是不是数组类型
+        if (item instanceof Array) {
+            //此时item就是数组，给b对象添加一个空数组
+            b[key] = [];
+            //把a中的数组对象item里的属性复制给b新复制的空数组里
+            extend(item, b[key]);
+            //判断此时的a属性是不是对象类型
+        } else if (item instanceof Object) {
+            //此时item就是对象，给b对象添加一个空对象
+            b[key] = {};
+            //把a中的属性对象item里的属性复制给b新复制的空属性对象里
+            extend(item, b[key]);
+        } else {
+            //如果是普通数据，直接复制到b对象的这个属性中
+            b[key] = item;
+        }
+    }
+}
+extend(obj1, obj2);
+
+
+
+
+三、正则表达式验证用户名，用户名要求 4 到 16 位，且包含字母，数字，下划线，减号
+
+答案：
+var pwd = prompt("请出入用户名")
+var userNamePattern = /^[a-zA-Z0-9_-]{4,16}$/;
+if (userNamePattern.test(pwd)) {
+	console.log("√");
+}else{
+	console.log("您的用户名格式有误")
+}
+
+
+
+
+四、正则表达式验证密码，密码要求最少 6 位，且包括至少1个大写字母，1个小写字母，1个数字，1个特殊字符
+
+答案：
+var pwd = prompt("请出入密码")
+var pwdPattern = /^.*(?=.{6,})(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*? ]).*$/;
+if (pwdPattern.test(pwd)) {
+	console.log("√");
+}else{
+	console.log("您的密码格式有误");
+}
+
+
+
+五、正则表达式验证手机号
+
+答案：
+var mobile = prompt("请出入手机号")
+var mobilePattern = /^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\d{8}$/;
+if (mobilePattern.test(mobile)) {
+	console.log("√");
+}else{
+	console.log("您输入手机号有误");
+}
+
+
+
+六、正则表达式验证邮箱
+
+
+答案：
+var email = prompt("请出入邮箱")
+var emailPattern = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+if (emailPattern.test(email)) {
+	console.log("√");
+}else{
+	console.log("您输入的邮箱格式有误");
+}
+

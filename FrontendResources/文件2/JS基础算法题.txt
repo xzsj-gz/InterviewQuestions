@@ -1,0 +1,274 @@
+第一题：写出如下的计算结果
+var num=10;
+var sum=num++ +10;
+console.log(sum);-------------------->//20
+console.log(num);-------------------->//11
+
+
+var num=10;
+var sum=10+ ++num;
+console.log(sum);-------------------->//21
+console.log(num);-------------------->//11
+
+var num=10;
+var sum=num-- +10;
+console.log(sum);-------------------->//20
+console.log(num);-------------------->//9
+
+var num=10;
+var sum=--num +10;
+console.log(sum);-------------------->//19
+console.log(num);-------------------->//9
+
+
+
+
+
+
+
+第二题：将如下两个变量进行互换，请使用三种实现方式
+
+var num1=10;
+var num2=20;
+
+答案：
+
+
+第一种：
+num1 = num1 + num2;
+num2 = num1 - num2;
+num1 = num1 - num2;
+
+第二种：
+num1 = num1^num2;
+num2 = num1^num2;
+num1 = num1^num2;
+
+第三种：
+var temp=num1;
+num1=num2;
+num2=temp;
+
+第四种：
+[num1,num2] = [num2,num1];
+
+第五种：
+num1 = num1*num2 /num1;
+num2 = num1*num2/num2;
+
+第六种：
+num1=[num2,num2=num1][0]
+
+第七种：
+var array=[num1,num2]
+num1=array[1]
+num2=array[0]
+
+
+变量交换的第一个思路:借助中间变量进行交换
+var temp=num1;//将num1的值取出来放在中间变量中
+num1=num2;//将num2的值取出来放在num1变量中
+num2=temp;
+
+
+
+//第二个思路：将num1和num2变量中的值取出来相加,重新赋值给num1这个变量
+num1 = num1 + num2;//30
+num2 = num1 - num2;//10
+num1 = num1 - num2;//20
+
+//第三个思路：利用位运算
+num1 = num1^num2;
+num2 = num1^num2;
+num1 = num1^num2;
+
+
+
+
+
+
+第三题：编写一个方法，传入一个年份参数，判断年份是平年还是闰年
+
+答案：
+
+function judgeYear(year){
+	var str = "";
+	if(year % 4== 0 && year % 100!=0||year%400==0){
+		str = year+"年是闰年"
+		return str;
+	}else{
+		str = year+"年是平年"
+		return str;
+	}
+}
+
+
+
+
+
+
+第四题：计算1-100之间所有数字的和
+
+答案：
+var i=1;
+var sum=0;
+while( i<=100){
+	sum+=i;
+	i++;
+}
+console.log(sum);
+
+
+
+
+
+
+
+第五题：实现一个函数，计算一个数的阶乘
+
+答案：
+function factorial(val){
+	var result=1;
+	var i=1;
+	while(i<=val){
+		result*=i;
+		i++;
+	}
+	return result;
+}
+console.log(factorial(6))
+
+
+
+
+
+
+
+第六题： 求1-100之间的所有偶数的和
+
+答案：
+var sum=0;
+for(var i=1;i<=100;i++){
+	if(i%2==0){
+		sum+=i;
+	}
+} 
+console.log(sum);
+
+
+
+
+
+第七题：求1-100之间所有奇数的和
+
+答案：
+var sum=0;
+for(var i=1;i<=100;i++){
+	if(i%2!=0){
+		sum+=i;
+	}
+} 
+console.log(sum);
+
+
+
+
+
+
+第八题：求1-100之间所有能被3整除的数字的和
+
+答案：
+
+var sum=0;
+for(var i=1;i<=100;i++){
+	if(i%3==0){
+		sum+=i;
+	}
+} 
+console.log(sum)
+
+
+
+
+
+第九题：求1-100之间所有能被7整除的数字的和
+
+
+答案：
+var sum=0;
+for(var i=1;i<=100;i++){
+	if(i%7==0){
+		sum+=i;
+	}
+} 
+console.log(sum);
+
+
+
+
+
+
+第十题：用星星实现一个三角形
+
+答案：
+for(var i=1;i<=5;i++){
+	for(var j=0;j<i;j++){
+	document.write("★");
+
+	}
+	document.write("<br />");
+
+}
+
+
+
+
+
+
+第十一题：用表格实现一个乘法口诀表
+
+答案：
+
+document.write("<table border='1' cellspacing='0' cellpadding='0'>");
+for(var i=1;i<=9;i++){
+	document.write("<tr>");
+	for(var j=1;j<=i;j++){
+		document.write("<td>");
+		document.write(i+"*"+j+"="+i*j)
+		document.write("<td>");
+	}
+	document.write("</tr>");
+
+}
+document.write("</table>");
+
+
+
+第十二题：var arr=[6,2,9,3,44,20,32,0]; 利用循环语句给此数组进行从小到大排序
+
+答案：
+
+var arr=[6,2,9,3,44,20,32,0];
+
+//控制轮数
+for(var i=0;i<arr.length-1;i++){
+    //控制比较的次数
+    for(var j=0;j<arr.length-i;j++){
+        if(arr[j]>arr[j+1]){
+            var temp=arr[j];
+            arr[j]=arr[j+1];
+            arr[j+1]=temp;
+        }
+    }
+}
+console.log(arr);
+
+
+
+
+
+
+
+
+
+

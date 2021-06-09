@@ -197,8 +197,3 @@ Object.prototype.toString.call(document) ; // [object HTMLDocument]
 Object.prototype.toString.call(window) ; //[object global] window是全局对象global的引用
 ```
 
-
-> 作者：浪里行舟   
-> 链接：[JavaScript的数据类型及其检测](https://github.com/ljianshu/Blog/issues/4)   
-> 来源：github   
-> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。

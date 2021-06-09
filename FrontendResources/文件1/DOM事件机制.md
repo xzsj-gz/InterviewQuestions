@@ -296,8 +296,3 @@ target:d&currentTarget:a
 从输出中我们可以看到，`event.target`指向引起触发事件的元素，而`event.currentTarget`则是事件绑定的元素，只有被点击的那个目标元素的`event.target`才会等于`event.currentTarget`。**也就是说，`event.currentTarget`始终是监听事件者，而`event.target`是事件的真正发出者**。
 
 
-
-> 作者：浪里行舟   
-> 链接：[DOM事件机制](https://github.com/ljianshu/Blog/issues/44)   
-> 来源：github   
-> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
